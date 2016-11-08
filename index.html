@@ -6,40 +6,61 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-3.1.0.js"></script>
     <script src="js/scripts.js"></script>
-    <title></title>
+    <title>Bill's Pizza</title>
   </head>
 
   <body>
-    <h1>Pizza Maker</h1>
-    <div class="form-group">
-      <select id="size">
-        <option value="small">Small (10")</option>
-        <option value="medium">Medium (13")</option>
-        <option value="large">Large (15")</option>
-        <option value="XL">Extra Large (18")</option>
-      </select>
-      <br>
-      <select id="crust">
-        <option value="regular">Regular</option>
-        <option value="stuffed">Stuffed (with Cheese)</option>
-        <option value="thin">Thin</option>
-      </select>
-      <br>
-      <select id="sauce">
-        <option value="classic">Classic</option>
-        <option value="marinara">Marinara</option>
-        <option value="white">White Sauce</option>
-      </select>
-      <br>
-      <input type="checkbox" name="pizza-topping" value="cathair">Cat Hair<br>
-      <input type="checkbox" name="pizza-topping" value="brinedoranges">Brined Oranges<br>
-      <input type="checkbox" name="pizza-topping" value="kumquatzest">Avacado Zest<br>
-      <input type="checkbox" name="pizza-topping" value="pickledham">Pickled Ham<br>
-      <input type="checkbox" name="pizza-topping" value="friedbananapeel">Fried Banana Peel<br>
+    <div class="container">
+      <div class="row">
+        <h1>Bill's Pizza</h1>
+        <br><br>
+        <div class="col-sm-2">
+        </div>
+        <div class="col-sm-3" id="menuPanel">
+          <h3>Menu</h3>
+          <h4>Sizes:</h4>
+          <p>Small ($10) Medium ($12) Large ($14) X-Large ($16)</p>
+          <h4>Extras:</h4>
+          <p>Price per topping ($1) White Sauce ($1) Stuffed Crust ($2)</p>
+          <br><br><br><br><br><br>
+        </div>
+        <div class="col-sm-1">
+        </div>
+        <div class="col-sm-3" id="orderPanel">
+          <h3>Make Your Pie</h3>
+          <div class="form-group">
+            <label for="size">Select Size:</label>
+            <select id="size">
+              <option value="small">Small (10")</option>
+              <option value="medium">Medium (13")</option>
+              <option value="large">Large (15")</option>
+              <option value="XL">Extra Large (18")</option>
+            </select>
+            <br>
+            <label for="crust">Select Crust:</label>
+            <select id="crust">
+              <option value="regular">Regular</option>
+              <option value="stuffed">Stuffed (with Cheese)</option>
+              <option value="thin">Thin</option>
+            </select>
+            <br>
+            <label for="sauce">Select Sauce:</label>
+            <select id="sauce">
+              <option value="classic">Classic</option>
+              <option value="marinara">Marinara</option>
+              <option value="white">White Sauce</option>
+            </select>
+            <br>
+            <label for="Toppings">Select Toppings:</label><br>
+            <input type="checkbox" name="pizza-topping" value="cathair">Cat Hair<br>
+            <input type="checkbox" name="pizza-topping" value="brinedoranges">Brined Oranges<br>
+            <input type="checkbox" name="pizza-topping" value="kumquatzest">Avacado Zest<br>
+            <input type="checkbox" name="pizza-topping" value="pickledham">Pickled Ham<br>
+            <input type="checkbox" name="pizza-topping" value="friedbananapeel">Fried Banana Peel<br>
 
-      <button type="button" class="btn btn-success" id="pizzabutton">Get My Pizza</button>
-    </div>
-
+            <button type="button" class="btn btn-success" id="pizzabutton">Get My Pizza</button>
+          </div>
+      </div>
 
   </body>
 </html>

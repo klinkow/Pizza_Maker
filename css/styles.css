@@ -1,0 +1,17 @@
+h1 {
+  text-align: center;
+}
+
+#menuPanel {
+  background-color: #e9ff00;
+  border: 10px solid;
+  border-radius: 50px;
+  border-color: #bf0d0d;
+}
+
+#orderPanel {
+  background-color: #e9ff00;
+  border: 10px solid;
+  border-radius: 50px;
+  border-color: #bf0d0d;
+}

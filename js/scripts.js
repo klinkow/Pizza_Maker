@@ -70,8 +70,7 @@ $(document).ready(function() {
     newPizza.createPrice();
 
     //rounds price to 2 decimal places
-    newPizza.price += 0.00000001;
-    newPizza.price.toFixed(2);
+    newPizza.price = newPizza.price.toFixed(2);
 
     console.log(newPizza);
 
