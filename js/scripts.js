@@ -7,45 +7,43 @@ function pizza (size, crust, sauce, toppings, price) {
   this.price = price;
 };
 
-var newPizza = new pizza("no size", "no crust", "no sauce", [], 0);
 var toppingsArray = [];
 var numberOfToppings;
 
-function addCostForSize() {
-  if (newPizza.size === "small") {
-  newPizza.price += 10;
-  } else if (newPizza.size === "medium") {
-    newPizza.price += 12;
-  } else if (newPizza.size === "large") {
-    newPizza.price += 14;
-  } else if (newPizza.size === "XL") {
-    newPizza.price += 16;
+pizza.prototype.addCostForSize = function () {
+  if (this.size === "small") {
+    this.price += 10;
+  } else if (this.size === "medium") {
+    this.price += 12;
+  } else if (this.size === "large") {
+    this.price += 14;
+  } else if (this.size === "XL") {
+    this.price += 16;
   }
 };
 
-function addCostForCrust() {
-  if (newPizza.crust === "stuffed") {
-  newPizza.price += 2;
+pizza.prototype.addCostForCrust = function() {
+  if (this.crust === "stuffed") {
+    this.price += 2;
   }
 };
 
-function addCostForSauce() {
-  if (newPizza.sauce === "white") {
-  newPizza.price += 1;
+pizza.prototype.addCostForSauce = function() {
+  if (this.sauce === "white") {
+    this.price += 1;
   }
 };
 
-function addCostForToppings() {
+pizza.prototype.addCostForToppings = function() {
   numberOfToppings = toppingsArray.length;
-  newPizza.price += numberOfToppings;
+  this.price += numberOfToppings;
 }
 
-//creates a method that calculates pizza price
 pizza.prototype.createPrice = function() {
-  addCostForSize();
-  addCostForCrust();
-  addCostForSauce();
-  addCostForToppings();
+  this.addCostForSize();
+  this.addCostForCrust();
+  this.addCostForSauce();
+  this.addCostForToppings();
 };
 
 // User Interface logic:
