@@ -24,35 +24,29 @@ _Created using Bootstrap and jQuery._
 
 ## Specification
 
-__It can create a new pizza object when a button is clicked__
+__Increasing the size of the pizza will add to the price of the pizza__
 
-_Example Input: "Get My Pizza" button is clicked_
+_Example Input: User orders a medium pizza with marinara sauce on regular crust with no toppings_
 
-_Example Output: console.log(pizza object) reveals details of pizza object._
+_Example Output: The price of the pizza is $12.00_
 
-__It can take user input from the dropdown menus to change the properties of the pizza object__
+__A stuffed crust pizza will add $2.00 to the cost of the pizza__
 
-_Example Input: User selects from dropdown menu and clicks the Get My Pizza button_
+_Example Input: User orders a medium pizza with marinara sauce on a stuffed crust with no toppings_
 
-_Example Output: console.log(pizza object) reveals change to pizza object._
+_Example Output: The price of the pizza is $14.00_
 
-__It can take user input from the checkboxes to change the properties of the pizza object in logically additive ways__
+__Selecting white sauce will add $1.00 to the cost of the pizza__
 
-_Example Input: User selects three checkboxes and clicks the Get My Pizza button_
+_Example Input: User orders a medium pizza with white sauce on a stuffed crust with no toppings_
 
-_Example Output: console.log(pizza object) reveals that the three checkboxes have been added to the pizza object._
+_Example Output: The price of the pizza is $15.00_
 
-__It can add cost to the pizza based on changes from the user__
+__Adding toppings to the pizza will add $1.00 to the price of the pizza for each additional topping__
 
-_Example Input: User selects from dropdown menu and clicks the Get My Pizza button_
+_Example Input: User orders a medium pizza with white sauce on a stuffed crust with cat hair and avacado zest_
 
-_Example Output: An alert indicates to the user that the cost of their selections has been added to the total cost of the pizza in a logical way_
-
-__It can reset all variables and objects when creating a new object__
-
-_Example Input: User clicks the Get My Pizza button a second time._
-
-_Example Output: console.log(pizza object) reveals that the new object being created is not affected by the first object that was created._
+_Example Output: The price of the pizza is $17.00_
 
 ### License
 
