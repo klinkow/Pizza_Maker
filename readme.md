@@ -1,6 +1,6 @@
 # _Pizza Maker_
 
-#### _A website for creating disgusting pizzas, 11/7/16_
+#### _A website for creating disgusting pizzas,  11/7/16_
 
 #### By _**Bill Klinkow**_
 
